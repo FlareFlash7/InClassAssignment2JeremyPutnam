@@ -1,10 +1,11 @@
+/*make the animal counter*/
 let animalsOnScreen = 0;
-
+/*update the counter as it continues*/
 function updateCounter() {
   document.getElementById("counter").textContent =
     "Animals on Screen: " + animalsOnScreen;
 }
-
+/*keeps track of which animal*/
 function toggleAnimal(id) {
   const img = document.getElementById(id);
 
@@ -18,7 +19,7 @@ function toggleAnimal(id) {
 
   updateCounter();
 }
-
+/*can reset everything*/
 function resetZoo() {
   const animals = ["cat", "dog", "cow"];
 
